@@ -58,4 +58,18 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // OkHttp для логирования запросов
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
+
+    // Для работы с JWT
+    implementation ("com.auth0.android:jwtdecode:2.0.2")
+
+    // Для хранения токена
+    implementation ("androidx.security:security-crypto:1.1.0-alpha06")
+
+    // Для обработки жизненного цикла корутин
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
 }
