@@ -98,7 +98,8 @@ fun AuthApp() {
 
         composable("profile") {
             ProfileScreen(
-                onBackClick = { navController.popBackStack() }
+                onBackClick = { navController.popBackStack() },
+                authService = authService
             )
         }
 
